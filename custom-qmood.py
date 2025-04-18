@@ -227,9 +227,18 @@ def main():
         print("\nRecalculating QMOOD metrics using hardcoded formulas...")
         merged_df = recalculate_qmood_metrics(merged_df)
         
+        # Round QMOOD metrics to two decimal places
+        print("Rounding QMOOD metrics to two decimal places...")
+        for metric in QMOOD_METRICS:
+            if metric in merged_df.columns:
+                # Convert to numeric first to ensure proper rounding
+                merged_df[metric] = pd.to_numeric(merged_df[metric], errors='coerce')
+                # Apply rounding and format to ensure two decimal places
+                merged_df[metric] = merged_df[metric].apply(lambda x: round(x, 2) if pd.notnull(x) else x)
+        
         # Save the merged DataFrame to a CSV file
         print(f"\nSaving merged CSV to: {args.output}")
-        merged_df.to_csv(args.output, index=False)
+        merged_df.to_csv(args.output, index=False, float_format='%.2f')
         
         print("Processing completed successfully")
         
