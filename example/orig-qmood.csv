@@ -1,0 +1,4 @@
+Name,WMC,DIT,NOCC,CBO,RFC,LCOM,WMC*,NOM,MPC,DAC,SIZE1,SIZE2,DSC,NOH,ANA,DAM,DCC,CAM,MOA,MFA,NOP,CIS,NPM,Reusability,Flexibility,Understandability,Functionality,Extendibility,Effectiveness,fanIn,ClassNames
+src/main/java/dev/codedok/Constants.java,2.00,0,0,0.00,2.00,0.00,0.67,2.00,0.00,0,6,2,1,0,0,0.00,0.00,0.00,0,0.00,0,2,2,1.50,0.00,-0.99,0.66,0.00,0.00,1,dev.codedok.Constants
+src/main/java/dev/codedok/BasicCalculator.java,9.00,0,0,2.00,56.00,0.00,3.30,9.00,47.00,0,183,9,1,0,0,0.00,2.00,0.00,0,0.00,0,9,9,4.50,-0.50,-3.96,2.20,-1.00,0.00,0,dev.codedok.BasicCalculator
+src/main/java/dev/codedok/TrigFunctions.java,6.00,0,0,0.00,12.00,0.00,0.86,6.00,6.00,0,42,6,1,0,0,0.00,0.00,0.00,0,0.00,0,6,6,3.50,0.00,-2.31,1.54,0.00,0.00,1,dev.codedok.TrigFunctions
